@@ -3,25 +3,25 @@
 The following is a checklist of activities that are to be uploaded to the repo:
 
 **JMeter**:
-- [Done] Activity 1(JMX File) - To run a basic load test to demonstarate the basic elements in JMeter - Thread Group, Sampler, Assertions, Listener, Timers
-- [Done] Activity 2(JMX File) - To do a basic load test on a website using Basic Authentication
-- [Done] Activity 3(JMX File) - To implement basic load test using pre and post processors on the training support Selenium site
-- [Done] Actvitiy 4(JMX File) - Connecting to a database and run a load test
-- [Done] Actvitiy 5(JMX File) - Loading data from a CSV file and using that data in a HTTP Request
-- [Done] Activity 6(JMX File) - A demonstration of how the HTTP Link parser works
-- [DOne] Activity 7(JMX File) - A Spidering example using the Selenium website
-- [DOne] Activity 8(JMX File) - To run a basic load test on the Selenium site for Training Support
+- [ ] Activity 1(JMX File) - To run a basic load test to demonstarate the basic elements in JMeter - Thread Group, Sampler, Assertions, Listener, Timers
+- [ ] Activity 2(JMX File) - To do a basic load test on a website using Basic Authentication
+- [ ] Activity 3(JMX File) - To implement basic load test using pre and post processors on the training support Selenium site
+- [ ] Actvitiy 4(JMX File) - Connecting to a database and run a load test
+- [ ] Actvitiy 5(JMX File) - Loading data from a CSV file and using that data in a HTTP Request
+- [ ] Activity 6(JMX File) - A demonstration of how the HTTP Link parser works
+- [ ] Activity 7(JMX File) - A Spidering example using the Selenium website
+- [ ] Activity 8(JMX File) - To run a basic load test on the Selenium site for Training Support
 
 **JMeter Project**:
-- [Done] Activity 1(JMX File) - Recording a load test
-- [Done] Activity 2(JMX File) - Load testing an API with Authentication
-- [Done] Activity 3(JMX File) - Petstore API
+- [ ] Activity 1(JMX File) - Recording a load test
+- [ ] Activity 2(JMX File) - Load testing an API with Authentication
+- [ ] Activity 3(JMX File) - Petstore API
 
 **Linux**:
-- [Done] Activity 1(Screenshot) - Commands to show how to interact with the filesystem using basic shell commands.
-- [Done] Activity 2(Screenshot) - Show how to use the vim text editor to edit text at the terminal.
-- [Done] Activity 3(Screenshot) - Commands to show how to redirect the flow of data between STDIN/STDOUT/STDERR
-- [Done] Activity 4(.sh file) - Create a shell script that creates 6 file each of types .png, .mp3, and .mp4. Move these to Image, Songs, and Movies folders respectively.
+- [ ] Activity 1(Screenshot) - Commands to show how to interact with the filesystem using basic shell commands.
+- [ ] Activity 2(Screenshot) - Show how to use the vim text editor to edit text at the terminal.
+- [ ] Activity 3(Screenshot) - Commands to show how to redirect the flow of data between STDIN/STDOUT/STDERR
+- [ ] Activity 4(.sh file) - Create a shell script that creates 6 file each of types .png, .mp3, and .mp4. Move these to Image, Songs, and Movies folders respectively.
 
 **Docker**:
 - [ ] Activity 1(Screenshot) - Command to create a container with the hello-world image
