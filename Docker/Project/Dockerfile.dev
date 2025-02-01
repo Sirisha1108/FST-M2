@@ -1,0 +1,15 @@
+# Dockerfile.dev
+FROM docker.io/node:18-alpine
+
+# Set working directory
+WORKDIR /usr/app
+
+# Copy package.json and install dependencies
+COPY ./package.json ./
+RUN npm install
+
+# Copy all files
+COPY . .
+
+# Default command for development
+CMD ["npm", "run", "serve"]
