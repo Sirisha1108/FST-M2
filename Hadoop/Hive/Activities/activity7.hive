@@ -1,0 +1,25 @@
+#created a csv file in BigData folder
+$ vim /root/empData.csv
+$ vim /root/activity7.hive
+
+DROP TABLE employee;
+
+CREATE TABLE employee
+(id INT, name STRING, dept STRING, yoj INT, salary INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+TBLPROPERTIES ("skip.header.line.count"="1");
+
+LOAD DATA LOCAL INPATH '/root/empData.csv'
+INTO TABLE employee;
+
+# Exports to HDFS directory
+INSERT OVERWRITE DIRECTORY '/user/NolliSirisha/HiveOutput1'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT * FROM employee WHERE dept='IT';
+
+#Export o local fs
+INSERT OVERWRITE DIRECTORY '/root/HiveOutput2'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT * FROM employee WHERE yoj='2022';
+
+$ hive -f /root/activity7.hive

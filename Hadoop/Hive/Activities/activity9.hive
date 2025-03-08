@@ -1,0 +1,24 @@
+$ vim /root/zipcodes.csv
+$ vim /root/activity9.hive
+
+DROP TABLE zipcodes;
+
+-- Create the zipcodes table with
+CREATE TABLE zipcodes(RecordNumber int, Country string, City string, Zipcode int)
+-- To add the partitions based on the state column
+PARTITIONED BY (state string)
+-- To create 3 buckets
+CLUSTERED BY (Zipcode) INTO 3 BUCKETS
+-- Add formatting for CSV data
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+-- Load the data from the CSV file
+LOAD DATA LOCAL INPATH '/root/zipcodes.csv'
+INTO TABLE zipcodes;
+
+-- Exports to LOCAL directory
+INSERT OVERWRITE LOCAL DIRECTORY '/root/result'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+SELECT * FROM zipcodes WHERE state='PR' and Zipcode=714;
+
+beeline -u jdbc:hive2:// -f root/activity9.hive
